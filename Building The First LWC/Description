@@ -3,66 +3,31 @@ Building The First LWC
 
 1.	ctrl+shift+p	->		SFDX: Create Lightning Web Components	->		Enter File Name : Example = 'helloWorld'  (Salesforce recommends "Camel Case" format)		->		Select Directory
 
+
+
 Once we have followed the above steps. Three files will be created under the 'lwc/helloWorld' directory. 
 
 	- A helloWorld.html file 	: 	All tags that we want to create are done here
-	
-							Code Example : 
-											<template>
-												<div class="slds-card-wrapper">
-													<h1>Nadeem : Hello World ! </h1>
-												</div>
-											</template>
-										
+									
 	
 	- A helloWorld.js file		: 	All the JavaScript related code will go go here. (handlers , properties etc..)
 	
-							Code Example : 
 
-											//We are importing the lightning Element base class for the lightning component from the core 'lwc' module.
-											import { LightningElement } from 'lwc';
-
-												//This class will contain all the JavaScript related code.
-												//export default class helloWorld extends from the 'LightningElement' 
-												export default class helloWorld extends LightningElement {
-
-
-												}
-
-
-
-
-	
 	- helloWorld.js-meta.xml file	:	This file contains the 'API Version' and 'is Exposed' attribute. 
-										The 'is Exposed' attribute is set to false by default. This value must be 'true' in order to make this component available for Lightning App Builder.
-	
-							Code Example : 
-
-											<?xml version="1.0" encoding="UTF-8"?>
-											<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-											<apiVersion>47.0</apiVersion>
-
-											<isExposed>true</isExposed>
-
-
-											<!-- LWC availability is set through the Targets Property. The below code makes this LWC available for a RecordPage, HomePage and AppPage -->
-											<targets>		
-													<target>lightning__RecordPage</target> 
-													<target>lightning__HomePage</target>    
-													<target>lightning__AppPage</target> 
-											</targets>
-
-											</LightningComponentBundle>
 
 
 
 2.	ctrl+shift+p	->		SFDX: Push Source to Default Scratch Org
+
+
 
 Once we have created the LWC and followed the above steps. We make changes to the org by pushing our source to the Default Scratch Org. 
 
 
 
 3. 	ctrl+shift+p	->		SFDX: Open Default Org 	->	App Launcher	->	Open : Service App		->		Click : Setup		->		Click : Edit Page		->	Drag 'hellWorld' from 'Custom' section from the left side bar to the page.	-> Click : Save ->	Click : Activate ->	Click : Activation ->	Click : Assign as Org Default -> Click : Save		
+
+
 
 Once we have followed the above steps. We are able to see our LWC on our 'Service App' page. 
 
