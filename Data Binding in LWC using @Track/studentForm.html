@@ -1,0 +1,16 @@
+<template>
+
+    <div class="slds-card-wrapper">
+
+        <h1>Student Name : {studentName}</h1>
+        <h1>Favourite Subject : {favSubject}</h1>
+    </div>
+
+    <div class="slds-card-wrapper">
+
+        <lightning-input label="Enter Student Name : " value={studentName} onchange={changeStudentName}></lightning-input>
+        <lightning-input label="Enter Favourite Subject : " value={favSubject} onchange={changeFavSubject}></lightning-input>
+        
+    </div>
+    
+</template>
