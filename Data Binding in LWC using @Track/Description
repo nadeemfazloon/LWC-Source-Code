@@ -1,1 +1,44 @@
+Data Binding in LWC using @Track
+---------------------------------
 
+Scenario 	: Create a LWC to input a student name and their favourite subject. 
+
+
+Step 1		:	Open Default org if not already done 
+
+
+Step 2 		: 	Create A LWC
+
+				ctrl+shift+p 	-> SFDX: Create Lightning Web Components	->		Enter File Name : Example = 'studentForm'  (Salesforce recommends "Camel Case" format)		->		Select Directory
+
+
+Step 3 		: 	Edit studentForm.html
+
+				- Create 2 tags to display properties. 
+				- Create 2 lightning tags to input data and add their handler events.
+						
+								
+Step 4 		: 	Edit studentForm.js
+
+				- Add @track to properties
+				- Create Handlers
+
+
+Step 5 		: 	Edit studentForm.js-meta.xml file
+
+				- Set is exposed to 'true'
+				- Create and add the targets
+
+
+Step 6 		: 	Push Source to Default Scratch Org
+
+				ctrl+shift+p	->		SFDX: Push Source to Default Scratch Org
+				
+				
+Step 7 		: 	Display LWC component on service app page
+
+
+Step 8 		: 	Enter Data in the lightning-inputs to test component.
+
+
+ 
