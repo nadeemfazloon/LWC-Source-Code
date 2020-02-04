@@ -25,7 +25,7 @@ Once we have created the LWC and followed the above steps. We make changes to th
 
 
 
-3. 	ctrl+shift+p	->		SFDX: Open Default Org 	->	App Launcher	->	Open : Service App		->		Click : Setup		->		Click : Edit Page		->	Drag 'hellWorld' from 'Custom' section from the left side bar to the page.	-> Click : Save ->	Click : Activate ->	Click : Activation ->	Click : Assign as Org Default -> Click : Save		
+3. 	ctrl+shift+p	->		SFDX: Open Default Org 	->	App Launcher	->	Open : Service App		->		Click : Setup		->		Click : Edit Page		->	Drag 'helloWorld' from 'Custom' section from the left side bar to the page.	-> Click : Save ->	Click : Activate ->	Click : Activation ->	Click : Assign as Org Default -> Click : Save		
 
 
 
