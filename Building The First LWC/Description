@@ -5,54 +5,54 @@ Building The First LWC
 
 Once we have followed the above steps. Three files will be created under the 'lwc/helloWorld' directory. 
 
-	- A helloWorld.html file 		: 	All tags that we want to create are done here
+	- A helloWorld.html file 	: 	All tags that we want to create are done here
 	
-											Code Example : 
-															<template>
-																<div class="slds-card-wrapper">
-																	<h1>Nadeem : Hello World ! </h1>
-																</div>
-															</template>
+							Code Example : 
+											<template>
+												<div class="slds-card-wrapper">
+													<h1>Nadeem : Hello World ! </h1>
+												</div>
+											</template>
 										
 	
-	- A helloWorld.js file			: 	All the JavaScript related code will go go here. (handlers , properties etc..)
+	- A helloWorld.js file		: 	All the JavaScript related code will go go here. (handlers , properties etc..)
 	
-											Code Example : 
-											
-															//We are importing the lightning Element base class for the lightning component from the core 'lwc' module.
-															import { LightningElement } from 'lwc';
+							Code Example : 
 
-																//This class will contain all the JavaScript related code.
-																//export default class helloWorld extends from the 'LightningElement' 
-																export default class helloWorld extends LightningElement {
-																
-																
-																}
-	
-										
-											
-	
+											//We are importing the lightning Element base class for the lightning component from the core 'lwc' module.
+											import { LightningElement } from 'lwc';
+
+												//This class will contain all the JavaScript related code.
+												//export default class helloWorld extends from the 'LightningElement' 
+												export default class helloWorld extends LightningElement {
+
+
+												}
+
+
+
+
 	
 	- helloWorld.js-meta.xml file	:	This file contains the 'API Version' and 'is Exposed' attribute. 
 										The 'is Exposed' attribute is set to false by default. This value must be 'true' in order to make this component available for Lightning App Builder.
 	
-											Code Example : 
-											
-															<?xml version="1.0" encoding="UTF-8"?>
-															<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-															<apiVersion>47.0</apiVersion>
-															
-															<isExposed>true</isExposed>
-    
-	
-															<!-- LWC availability is set through the Targets Property. The below code makes this LWC available for a RecordPage, HomePage and AppPage -->
-															<targets>		
-																	<target>lightning__RecordPage</target> 
-																	<target>lightning__HomePage</target>    
-																	<target>lightning__AppPage</target> 
-															</targets>
-																
-															</LightningComponentBundle>
+							Code Example : 
+
+											<?xml version="1.0" encoding="UTF-8"?>
+											<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+											<apiVersion>47.0</apiVersion>
+
+											<isExposed>true</isExposed>
+
+
+											<!-- LWC availability is set through the Targets Property. The below code makes this LWC available for a RecordPage, HomePage and AppPage -->
+											<targets>		
+													<target>lightning__RecordPage</target> 
+													<target>lightning__HomePage</target>    
+													<target>lightning__AppPage</target> 
+											</targets>
+
+											</LightningComponentBundle>
 
 
 
